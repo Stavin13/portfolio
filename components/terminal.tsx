@@ -85,7 +85,7 @@ export default function Terminal() {
             <p className="font-bold">Available commands:</p>
             <ul className="space-y-1">
               <li>
-                <span className="text-white font-bold">about</span> - Learn about Gokul
+                <span className="text-white font-bold">about</span> - Learn about Stavin
               </li>
               <li>
                 <span className="text-white font-bold">education</span> - View educational background
