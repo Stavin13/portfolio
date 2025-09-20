@@ -130,6 +130,92 @@ export function ProjectsSection() {
           </p>
         </div>
       </div>
+      <div className="p-3 border border-primary/20 rounded bg-primary/5">
+          <h3 className="text-primary font-bold">SnipSync: Copy Anyhwere Paste Anwyhere</h3>
+          <pre className="text-xs my-2 text-muted-foreground">
+            {`
+  +------------------+      +-------------------+      +-------------------------+
+ | SnipSync Server  |----->| Clipboard         |----->| Data Accumulation &     |
+ | Initialization   |      | Monitoring        |      | Encoding (Compress, AES)|
+ +------------------+      +-------------------+      +-------------------------+
+          |                         |                          |
+          |                         v                          |
+          |                +-------------------+               |
+          +--------------->| Decision & Routing|<--------------+
+                           | (Broadcast/Peer)  |
+                           +-------------------+
+                                    |
+                                    v
+                           +-------------------+
+                           | Sync Evaluation & |
+                           | Verification/Logs |
+                           +-------------------+
+                                    |
+                                    v
+                           +-------------------+
+                           | Clipboard Update  |
+                           | on Devices        |
+                           +-------------------+
+
+`}
+
+          </pre>
+          <p className="text-sm mb-2">
+  A secure clipboard synchronization tool enabling real-time sharing of text, images, and files across devices over LAN with encryption and low latency.
+</p>
+<p className="text-xs text-muted-foreground mb-2">
+  Technologies: Python, Pyperclip, AES Encryption, WebSockets, SQLite, Docker, Raspberry Pi
+</p>
+        </div>
+        <div className="p-3 border border-primary/20 rounded bg-primary/5">
+          <h3 className="text-primary font-bold">ThreatLens - AI-Powered Security Log Analysisc</h3>
+          <pre className="text-xs my-2 text-muted-foreground">
+            {`          +--------------------+
+          |   Security Logs    |
+          | (Syslog, Console,  |
+          |   Custom Formats)  |
+          +--------------------+
+                    |
+                    v
+          +--------------------+
+          |  Real-time Log     |
+          |   Processing       |
+          +--------------------+
+                    |
+                    v
+          +--------------------+
+          | AI-Powered Threat  |
+          |   Detection &      |
+          |   Categorization   |
+          +--------------------+
+                    |
+        +-----------+-----------+
+        |                       |
+        v                       v
++--------------------+   +--------------------+
+| Historical Log     |   |  WebSocket API     |
+| Storage & Search   |   | (Real-time Alerts) |
++--------------------+   +--------------------+
+        |                       |
+        +-----------+-----------+
+                    |
+                    v
+          +--------------------+
+          | React Web Dashboard|
+          |   Visualization    |
+          +--------------------+
+
+
+`}
+
+          </pre>
+          <p className="text-sm mb-2">
+  An AI-powered security log analysis platform that delivers real-time threat detection, intelligent categorization, and interactive visualization of security events.
+</p>
+<p className="text-xs text-muted-foreground mb-2">
+  Technologies: Python, Machine Learning, macOS Console, Syslog, WebSockets, React, Docker
+</p>
+        </div>
     </div>
   )
 }
